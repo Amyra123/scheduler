@@ -1,0 +1,217 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    height:auto;
+    width:100vw;
+    background-color: aliceblue;
+    display:flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.box{
+    height:100%;
+    width:80%;
+    background-color: white;
+    margin:auto;
+    box-shadow: 0 0 1rem 0.25rem gainsboro ;
+}
+
+.month{
+    width:100%;
+    background-color:rgb(0, 72, 139);
+    color:white;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    padding:2rem;
+    text-align: center;
+}
+
+.btns{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding:2rem;
+    background-color: rgb(0, 72, 139);
+    
+}
+
+.body{
+    display:flex;
+    height:80%;
+}
+
+.calender{
+    flex:1;
+    margin:1rem 0;
+    padding:2rem;
+}
+
+.right{
+    flex:1;
+    height:100%;
+    padding:1rem;
+    margin:3rem;
+    background-color:rgb(0, 72, 139);
+    width:7rem;
+}
+
+.dims{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+    background-color: rgb(2, 63, 121);
+    color:white;
+    width:100%;
+}
+
+.dims div{
+    width:14.284%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1rem;
+    margin:0 0.75rem;
+}
+
+.days{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: start;
+    /* border-style: solid;
+    border-width:0.05rem;
+    border-color:rgb(2, 63, 121); */
+    height:auto;
+    padding:1rem 0;
+}
+
+.days div{
+    width:14.284%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:4rem;
+    border-color:rgba(2, 63, 121,0.5);
+    border-style: solid;
+    border-width:0.04rem;
+    /* border-left:none;
+    border-top:none; */
+    /* padding:1rem;
+    margin:0 0.555rem; */
+}
+
+.days div .number{
+    border:none;
+    font-size:0.8rem;
+    font-weight:100;
+    text-align:center;
+    color:rgb(100, 148, 237);
+}
+
+.days div:hover{
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+.prev-dates{
+    color:gray;
+}
+
+.back,.next{
+    width:3rem;
+    height:3rem;
+    background-color: rgba(0, 0, 0, 0.192);
+    border-radius: 50%;
+    display: flex;
+    transition: all 0.5s;
+}
+
+.back span,.next span{
+    margin:auto;
+    font-size:1rem;
+}
+
+.back:hover,.next:hover{
+   background-color: rgba(0, 0, 0, 0.37);
+   cursor: pointer;
+}
+
+#Current-month{
+    padding:1rem;
+}
+
+.highlight{
+    background-color: rgba(100, 148, 237, 0.836);
+}
+
+
+.heading{
+    font-size:3rem;
+    font-weight:700;
+    text-align:center;
+    color:rgb(100, 148, 237);
+}
+
+.event{
+    height:4rem;
+    border-style:solid;
+    border-color:rgba(100, 148, 237, 0.836);
+    border-width:1rem;
+    padding:1rem;
+    border-top:none;
+    border-bottom:none;
+    border-right:none;
+    display:flex;
+    flex-direction:row;
+    justify-content:start;
+    align-items:center;
+    overflow:hidden;
+    margin:1rem;
+}
+
+.time{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    margin-right:1rem;
+    color:white;
+}
+
+.description{
+    color:white;
+    margin-left:1rem;
+    font-size:0.9rem;
+}
+
+button{
+    background-color:rgba(2, 63, 121,0.7);
+    color:white;
+    padding:1rem;
+    margin:0 2rem;
+    border-radius:20%;
+    border-style:solid;
+    border-color:rgb(2, 63, 121);
+}
+
+.teachersBox{
+    display:none;
+}
+
+
+
+
+
